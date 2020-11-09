@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Aloha CC — Dashboard</title>
+		<link rel="icon" href="index_files/AlohaCC-icon.png">
+		<!-- CSS FILES -->
+		<link rel="stylesheet" type="text/css" href="index_files/uikit.css">
+		<style>
+			.news-slide > li > .uk-card {
+				box-shadow: none;
+				border:  1px solid rgba(0,0,0,0.075);
+			}
+			h1, h2, h3, h4, h5, h6 {
+				font-weight: 700;
+			}
+			.uk-logo > img {
+				height: 58px;
+			}
+			#header.uk-sticky-below {
+				box-shadow: 0 2px 14px 0 rgba(0,0,0,0.07);
+			}
+			
+		</style>
+	<script>try {
+                        Object.defineProperty(screen, "availTop", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availLeft", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availWidth", { value: 1525 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availHeight", { value: 858 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "colorDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "pixelDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "hardwareConcurrency", { value: 8 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "appVersion", { value: "5.0 (Windows)" });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "doNotTrack", { value: "unspecified" });
+                    } catch (e) {}
+                    
+            try {
+                window.screenY = 849
+            } catch (e) { }
+        
+            try {
+                window.screenTop = 849
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerHeight = window.screen.height
+            } catch (e) { }
+        
+            try {
+                window.screenX = 1516
+            } catch (e) { }
+        
+            try {
+                window.screenLeft = 1516
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerWidth = window.screen.width
+            } catch (e) { }
+        </script></head>
+	<body>
+		<!--HEADER-->
+		<header id="header" style="background-color: #fff;" data-uk-sticky="show-on-up: true; animation: uk-animation-fade; media: @l" class="uk-sticky">
+			<div class="uk-container">
+				<nav id="navbar" data-uk-navbar="mode: click;" class="uk-navbar">
+					<div class="uk-navbar-left nav-overlay uk-visible@m">
+						<ul class="uk-navbar-nav">
+							<li>
+								<a href="#" title="Subscribe">Know the Developers</a>
+							</li>
+							<li>
+								<a href="#" title="Sign Up">Sign Up</a>
+							</li>
+						</ul>
+					</div>
+					<div class="uk-navbar-center nav-overlay">
+						<a class="uk-navbar-item uk-logo" href="#" title="Logo"><img src="index_files/AlohaCC.png" alt="Logo"></a>
+					</div>
+					<div class="uk-navbar-right nav-overlay">
+						<a class="uk-navbar-toggle uk-visible@m uk-icon uk-search-icon" data-uk-search-icon="" data-uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="search-icon"><circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle><path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path></svg></a>
+						<div class="uk-navbar-item">
+							<a class="uk-visible@s uk-icon" style="margin-right: 4px" href="#" data-uk-icon="facebook"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="facebook"><path d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z"></path></svg></a>
+							<a class="uk-visible@s uk-icon" style="margin-right: 4px" href="#" data-uk-icon="twitter"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="twitter"><path d="M19,4.74 C18.339,5.029 17.626,5.229 16.881,5.32 C17.644,4.86 18.227,4.139 18.503,3.28 C17.79,3.7 17.001,4.009 16.159,4.17 C15.485,3.45 14.526,3 13.464,3 C11.423,3 9.771,4.66 9.771,6.7 C9.771,6.99 9.804,7.269 9.868,7.539 C6.795,7.38 4.076,5.919 2.254,3.679 C1.936,4.219 1.754,4.86 1.754,5.539 C1.754,6.82 2.405,7.95 3.397,8.61 C2.79,8.589 2.22,8.429 1.723,8.149 L1.723,8.189 C1.723,9.978 2.997,11.478 4.686,11.82 C4.376,11.899 4.049,11.939 3.713,11.939 C3.475,11.939 3.245,11.919 3.018,11.88 C3.49,13.349 4.852,14.419 6.469,14.449 C5.205,15.429 3.612,16.019 1.882,16.019 C1.583,16.019 1.29,16.009 1,15.969 C2.635,17.019 4.576,17.629 6.662,17.629 C13.454,17.629 17.17,12 17.17,7.129 C17.17,6.969 17.166,6.809 17.157,6.649 C17.879,6.129 18.504,5.478 19,4.74"></path></svg></a>
+							<a class="uk-visible@s uk-icon" style="margin-right: 4px" href="#" data-uk-icon="instagram"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="instagram"><path d="M13.55,1H6.46C3.45,1,1,3.44,1,6.44v7.12c0,3,2.45,5.44,5.46,5.44h7.08c3.02,0,5.46-2.44,5.46-5.44V6.44 C19.01,3.44,16.56,1,13.55,1z M17.5,14c0,1.93-1.57,3.5-3.5,3.5H6c-1.93,0-3.5-1.57-3.5-3.5V6c0-1.93,1.57-3.5,3.5-3.5h8 c1.93,0,3.5,1.57,3.5,3.5V14z"></path><circle cx="14.87" cy="5.26" r="1.09"></circle><path d="M10.03,5.45c-2.55,0-4.63,2.06-4.63,4.6c0,2.55,2.07,4.61,4.63,4.61c2.56,0,4.63-2.061,4.63-4.61 C14.65,7.51,12.58,5.45,10.03,5.45L10.03,5.45L10.03,5.45z M10.08,13c-1.66,0-3-1.34-3-2.99c0-1.65,1.34-2.99,3-2.99s3,1.34,3,2.99 C13.08,11.66,11.74,13,10.08,13L10.08,13L10.08,13z"></path></svg></a>
+							<a class="uk-navbar-toggle uk-hidden@m uk-icon uk-navbar-toggle-icon" data-uk-toggle="" data-uk-navbar-toggle-icon="" href="#offcanvas-nav"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg></a>
+						</div>
+						
+					</div>
+					<div class="nav-overlay uk-navbar-left uk-flex-1" hidden="">
+						<div class="uk-navbar-item uk-width-expand">
+							<form class="uk-search uk-search-navbar uk-width-1-1">
+								<input class="uk-search-input" type="search" placeholder="Search...">
+							</form>
+						</div>
+						<a class="uk-navbar-toggle uk-icon uk-close" data-uk-close="" data-uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" data-svg="close-icon"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></a>
+					</div>
+				</nav>
+			</div>
+		</header><div class="uk-sticky-placeholder" style="height: 80px; margin: 0px;" hidden=""></div>
+		<!--/HEADER-->
+		<!-- FEATURED -->
+		<div class="uk-container">
+			<h4 class="uk-heading-line uk-text-bold"><span>Suggested Food Viands</span></h4>
+			<div data-uk-slider="velocity: 5" class="uk-slider">
+				<div class="uk-position-relative">
+					<div class="uk-slider-container">
+						<ul class="uk-slider-items uk-child-width-1-2@m uk-grid uk-grid-medium news-slide" style="transform: translate3d(0px, 0px, 0px);">
+							<li tabindex="-1" class="uk-active">
+								<div class="uk-card uk-card-default uk-card-body uk-card-small uk-flex uk-flex-middle uk-card-default uk-border-rounded">
+									<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" data-uk-grid="">
+										<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1 uk-first-column">
+											<img src="https://sf1.viepratique.fr/wp-content/uploads/sites/10/2014/12/pain-viande.jpg" style="width: 400px; height: 200px; object-fit: cover;"alt="">
+										</div>
+										<div class="uk-width-2-3@s uk-width-3-5@m">
+											<span class="uk-label uk-label-success" style="font-size: 0.75rem">Trends</span>
+											<h3 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom">
+											<a class="uk-link-reset" href="#">Viand Name</a>
+											</h3>
+											<span class="uk-article-meta">Good for dinner or breakfast	|	100 calories</span>
+											<p class="uk-margin-small">Sample introductory paragraph.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li tabindex="-1" class="uk-active">
+								<div class="uk-card uk-card-default uk-card-body uk-card-small uk-flex uk-flex-middle uk-card-default uk-border-rounded">
+									<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" data-uk-grid="">
+										<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1 uk-first-column">
+											<img src="https://media.philstar.com/images/articles/health1-charred-eggplant_2018-04-16_16-57-12.jpg" style="width: 400px; height: 200px; object-fit: cover;"alt="">
+										</div>
+										<div class="uk-width-2-3@s uk-width-3-5@m">
+											<span class="uk-label uk-label-success" style="font-size: 0.75rem">Trends</span>
+											<h3 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom">
+											<a class="uk-link-reset" href="#">Viand Name</a>
+											</h3>
+											<span class="uk-article-meta">Good for dinner or breakfast	|	100 calories</span>
+											<p class="uk-margin-small">Sample introductory paragraph.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li tabindex="-1" class="uk-active">
+								<div class="uk-card uk-card-default uk-card-body uk-card-small uk-flex uk-flex-middle uk-card-default uk-border-rounded">
+									<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" data-uk-grid="">
+										<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1 uk-first-column">
+											<img src="https://images.summitmedia-digital.com/yummyph/images/2016/12/12/BokChoyOysterSauce640.jpg" style="width: 400px; height: 200px; object-fit: cover;"alt="">
+										</div>
+										<div class="uk-width-2-3@s uk-width-3-5@m">
+											<span class="uk-label uk-label-success" style="font-size: 0.75rem">Trends</span>
+											<h3 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom">
+											<a class="uk-link-reset" href="#">Viand Name</a>
+											</h3>
+											<span class="uk-article-meta">Good for dinner or breakfast	|	100 calories</span>
+											<p class="uk-margin-small">Sample introductory paragraph.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li tabindex="-1" class="uk-active">
+								<div class="uk-card uk-card-default uk-card-body uk-card-small uk-flex uk-flex-middle uk-card-default uk-border-rounded">
+									<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" data-uk-grid="">
+										<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1 uk-first-column">
+											<img src="https://shoelifer.com/wp-content/uploads/2020/08/shoelifer_viande_aliments_proteines_healthy.png" style="width: 400px; height: 200px; object-fit: cover;"alt="">
+										</div>
+										<div class="uk-width-2-3@s uk-width-3-5@m">
+											<span class="uk-label uk-label-success" style="font-size: 0.75rem">Trends</span>
+											<h3 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom">
+											<a class="uk-link-reset" href="#">Viand Name</a>
+											</h3>
+											<span class="uk-article-meta">Good for dinner or breakfast	|	100 calories</span>
+											<p class="uk-margin-small">Sample introductory paragraph.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="uk-hidden@l uk-light">
+						<a class="uk-position-center-left uk-position-small uk-icon uk-slidenav-previous uk-slidenav" href="#" data-uk-slidenav-previous="" data-uk-slider-item="previous"><svg width="14px" height="24px" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-previous"><polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23 "></polyline></svg></a>
+						<a class="uk-position-center-right uk-position-small uk-icon uk-slidenav-next uk-slidenav" href="#" data-uk-slidenav-next="" data-uk-slider-item="next"><svg width="14px" height="24px" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-next"><polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 "></polyline></svg></a>
+					</div>
+					<div class="uk-visible@l">
+						<a class="uk-position-center-left-out uk-position-small uk-icon uk-slidenav-previous uk-slidenav" href="#" data-uk-slidenav-previous="" data-uk-slider-item="previous"><svg width="14px" height="24px" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-previous"><polyline fill="none" stroke="#000" stroke-width="1.4" points="12.775,1 1.225,12 12.775,23 "></polyline></svg></a>
+						<a class="uk-position-center-right-out uk-position-small uk-icon uk-slidenav-next uk-slidenav" href="#" data-uk-slidenav-next="" data-uk-slider-item="next"><svg width="14px" height="24px" viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" data-svg="slidenav-next"><polyline fill="none" stroke="#000" stroke-width="1.4" points="1.225,23 12.775,12 1.225,1 "></polyline></svg></a>
+					</div>
+				</div>
+				<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"><li uk-slider-item="0" class="uk-active"><a href=""></a></li><li uk-slider-item="1"><a href=""></a></li><li uk-slider-item="2"><a href=""></a></li><li uk-slider-item="3"><a href=""></a></li></ul>
+			</div>
+		</div>
+		<!-- /FEATURED -->
+		<!--CONTENT-->
+		<div class="uk-section uk-section-default">
+			<div class="uk-container">
+				<div class="uk-grid" data-ukgrid="">
+					<div class="uk-width-2-3@m">
+						<h4 class="uk-heading-line uk-text-bold"><span>Today's Calorie Intake</span></h4>
+						<article class="uk-section uk-section-small uk-padding-remove-top">
+							<header>
+								<img style="display:block;margin-left:auto;margin-right:auto;" src="index_files/calorie_intake.jpg" width="500px"/>
+								<h2 class="uk-margin-remove-adjacent uk-text-bold uk-margin-small-bottom" 
+								style="text-align: center; margin-top: 0px;">
+									<a style="font-size: 50px"title="Calorie Intake" class="uk-link-reset" href="#">
+										2,800
+									</a><span style="font-weight:normal">calories</span>
+								</h2>
+								<div style="text-align:center">
+									<button uk-toggle="target: #add-food" class="uk-button uk-button-primary" 
+									style="border-radius: 50px; text-transform: inherit; text-align: center">
+										I have consumed food with calories&nbsp;&nbsp;&nbsp;<span uk-icon="icon: plus-circle"></span>
+									</button>
+									<div id="add-food" uk-modal>
+										<div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-border-rounded">
+											<h2 class="uk-modal-title" style="text-align: center;">Choose the food you ate</h2>
+											<div class="uk-margin" style="text-align: center">
+												<form class="uk-search uk-search-default">
+													<span class="uk-search-icon-flip" uk-search-icon></span>
+													<input class="uk-search-input" type="search" placeholder="Search...">
+												</form>
+											</div>
+											<div class="uk-panel uk-panel-scrollable" style="height: 300px">
+												<ul class="uk-list">
+													<li tabindex="-1" class="uk-active">
+														<div class="uk-card uk-card-default uk-card-body uk-card-small uk-flex uk-flex-middle uk-card-default uk-border-rounded">
+															<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" data-uk-grid="">
+																<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1 uk-first-column">
+																	<img src="https://shoelifer.com/wp-content/uploads/2020/08/shoelifer_viande_aliments_proteines_healthy.png" style="width: 150px; height: 150px; object-fit: cover;"alt="">
+																</div>
+																<div class="uk-width-2-3@s uk-width-3-5@m">
+																	<span class="uk-label uk-label-warning" style="font-size: 0.75rem">Adobo</span>
+																	<label><input style="margin-left: 150px" class="uk-checkbox uk-card-badge" type="checkbox"></label>
+																	<h3 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom">
+																	<a class="uk-link-reset" href="#">Adobong Manok</a>
+																	</h3>
+																	<span class="uk-article-meta">Average number of calories per serving</span>
+																	<p style="margin-top: 0px">200 calories</p>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li tabindex="-1" class="uk-active">
+														<div class="uk-card uk-card-default uk-card-body uk-card-small uk-flex uk-flex-middle uk-card-default uk-border-rounded">
+															<div class="uk-grid uk-grid-medium uk-flex uk-flex-middle" data-uk-grid="">
+																<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1 uk-first-column">
+																	<img src="https://shoelifer.com/wp-content/uploads/2020/08/shoelifer_viande_aliments_proteines_healthy.png" style="width: 150px; height: 150px; object-fit: cover;"alt="">
+																</div>
+																<div class="uk-width-2-3@s uk-width-3-5@m">
+																	<span class="uk-label uk-label-warning" style="font-size: 0.75rem">Adobo</span>
+																	<label><input style="margin-left: 150px" class="uk-checkbox uk-card-badge" type="checkbox"></label>
+																	<h3 class="uk-card-title uk-margin-small-top uk-margin-remove-bottom">
+																	<a class="uk-link-reset" href="#">Adobong Manok</a>
+																	</h3>
+																	<span class="uk-article-meta">Average number of calories per serving</span>
+																	<p style="margin-top: 0px">200 calories</p>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div style="text-align: center;">
+												<button class="uk-margin-top uk-button uk-modal-close uk-button-primary uk-border-pill" 
+												style="background-color: #32d296" type="button">Add Food</button></br>
+												<button class="uk-margin-top uk-button uk-modal-close uk-button-text" type="button">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							<hr>
+						</article>
+					</div>
+					<div class="uk-width-1-3@m">
+						<h4 class="uk-heading-line uk-text-bold"><span>Food Diary</span></h4>
+						<div class="uk-panel uk-panel-scrollable"  style="height: 300px">
+							<ul class="uk-list">
+								<li tabindex="-1" class="uk-active">
+									<div class="uk-card uk-card-default uk-card-body uk-card-small uk-card-default">
+										<div class="uk-grid uk-grid-medium" data-uk-grid="">
+											<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1 uk-first-column">
+												<img src="https://shoelifer.com/wp-content/uploads/2020/08/shoelifer_viande_aliments_proteines_healthy.png" 
+												style="width: 400px; height: 100px; object-fit: cover;" alt="">
+											</div>
+											<div class="uk-width-2-3@s uk-width-3-5@m">
+												<h3 class="uk-card-title uk-margin-remove-bottom">
+												<a class="uk-link-reset" href="#">Diary Name</a>
+												</h3>
+												<span class="uk-label uk-label-secondary" style="font-size: 0.75rem; text-transform: capitalize;">Yesterday</span>
+												<p style="margin-top: 10px" class="uk-text-small">253 calories consumed.</p>
+											</div>
+										</div>
+										<div class="uk-grid uk-grid-medium" data-uk-grid="">
+											<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1 uk-first-column">
+												<img src="https://shoelifer.com/wp-content/uploads/2020/08/shoelifer_viande_aliments_proteines_healthy.png" 
+												style="width: 400px; height: 100px; object-fit: cover;" alt="">
+											</div>
+											<div class="uk-width-2-3@s uk-width-3-5@m">
+												<h3 class="uk-card-title uk-margin-remove-bottom">
+												<a class="uk-link-reset" href="#">Diary Name</a>
+												</h3>
+												<span class="uk-label uk-label-secondary" style="font-size: 0.75rem; text-transform: capitalize;">2 days ago</span>
+												<p style="margin-top: 10px" class="uk-text-small">253 calories consumed.</p>
+											</div>
+										</div>
+										<div class="uk-grid uk-grid-medium" data-uk-grid="">
+											<div class="uk-width-1-3@s uk-width-2-5@m uk-height-1-1 uk-first-column">
+												<img src="https://shoelifer.com/wp-content/uploads/2020/08/shoelifer_viande_aliments_proteines_healthy.png" 
+												style="width: 400px; height: 100px; object-fit: cover;" alt="">
+											</div>
+											<div class="uk-width-2-3@s uk-width-3-5@m">
+												<h3 class="uk-card-title uk-margin-remove-bottom">
+												<a class="uk-link-reset" href="#">Diary Name</a>
+												</h3>
+												<span class="uk-label uk-label-secondary" style="font-size: 0.75rem; text-transform: capitalize;">3 days ago</span>
+												<p style="margin-top: 10px" class="uk-text-small">253 calories consumed.</p>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<h4 class="uk-heading-line uk-text-bold"><span>About Us</span></h4>
+						<div class="uk-tile uk-tile-small uk-tile-muted uk-border-rounded">
+							This is a test about us.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/CONTENT-->
+		
+		
+		<!--FOOTER-->
+		<footer class="uk-section uk-section-small uk-section-muted">
+			<div class="uk-container">
+				<p class="uk-text-small uk-text-center">Design Algorithm, BSCS—SS191</a> | <img src="index_files/AlohaCC.png" width="20px" /> Aloha 2020</p>
+			</div>
+		</footer>
+		<!--/FOOTER-->
+		<!-- OFFCANVAS -->
+		<div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true" class="uk-offcanvas">
+			<div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+				<button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close=""><svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" data-svg="close-icon"><line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line><line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line></svg></button>
+				<ul class="uk-nav uk-nav-default">
+					<li class="uk-active"><a href="#">Active</a></li>
+					<li class="uk-parent">
+						<a href="#">Parent</a>
+						<ul class="uk-nav-sub">
+							<li><a href="#">Sub item</a></li>
+							<li><a href="#">Sub item</a></li>
+						</ul>
+					</li>
+					<li class="uk-nav-header">Header</li>
+					<li><a href="#js-options"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: table"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="table"><rect x="1" y="3" width="18" height="1"></rect><rect x="1" y="7" width="18" height="1"></rect><rect x="1" y="11" width="18" height="1"></rect><rect x="1" y="15" width="18" height="1"></rect></svg></span> Item</a></li>
+					<li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: thumbnails"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="thumbnails"><rect fill="none" stroke="#000" x="3.5" y="3.5" width="5" height="5"></rect><rect fill="none" stroke="#000" x="11.5" y="3.5" width="5" height="5"></rect><rect fill="none" stroke="#000" x="11.5" y="11.5" width="5" height="5"></rect><rect fill="none" stroke="#000" x="3.5" y="11.5" width="5" height="5"></rect></svg></span> Item</a></li>
+					<li class="uk-nav-divider"></li>
+					<li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: trash"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="trash"><polyline fill="none" stroke="#000" points="6.5 3 6.5 1.5 13.5 1.5 13.5 3"></polyline><polyline fill="none" stroke="#000" points="4.5 4 4.5 18.5 15.5 18.5 15.5 4"></polyline><rect x="8" y="7" width="1" height="9"></rect><rect x="11" y="7" width="1" height="9"></rect><rect x="2" y="3" width="16" height="1"></rect></svg></span> Item</a></li>
+				</ul>
+				<h3>Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+ex ea commodo consequat.</p>
+			</div>
+		</div>
+		<!-- /OFFCANVAS -->
+		<!-- JS FILES -->
+		<script src="index_files/uikit.js"></script>
+		<script src="index_files/uikit-icons.js"></script>
+		
+	
+
+</body></html>
