@@ -1,1 +1,1 @@
-<?php header( 'Location: duria.html' ) ;  ?>
+<?php header( 'Location: index.html' ) ;  ?>
