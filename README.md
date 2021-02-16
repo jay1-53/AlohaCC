@@ -1,7 +1,7 @@
 <p align="center"><img src="index_files/AlohaCC-icon.png" width="250" /></p>
 <h1 align="center">AlohaCC</h1>
 <p align="center"><sub>In utilization of UIKit framework:</sub></p>
-<p align="center"><a href="https://getuikit.com/"><img src="https://avatars0.githubusercontent.com/u/4173184?s=280&v=4" width="25" /></a></p>
+<p align="center"><a href="https://getuikit.com/"><img src="https://avatars0.githubusercontent.com/u/4173184?s=280&v=4" width="25" target="_blank"/></a></p>
 <br>
 <h4>About</h4>
 <p width="500" align="justify">A well-balanced diet and proper physical health are one of the essential parts of living a healthy life. 
