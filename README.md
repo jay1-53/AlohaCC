@@ -13,9 +13,9 @@ The program will use linear search and merge sort algorithm upon implementation 
 
 <h4>Files and their description</h4>
 <ol>
-<li><b>index.php</b> — <sub>This is landing page whereas the user have to login or sign-up for AlohaCC website application.</sub></li>
-<li><b>dash.php</b> — <sub>The dashboard after logging in from <i>index.php</i>. It compiles sort and search algorithms to yield specific feature.</sub></li>
-<li><b>diary.php</b> — <sub>Validating user's food diary and food intake by date and id.</sub></li>
-<li><b>sort.php</b> — <sub>Merge sort algorithm implemented in PHP language and was utilized to sort food intake by date, ascending or descending.</sub></li>
-<li><b>search.php</b> — <sub>Ruuning search algorithm for viands with suggested tag to show on 'Recommended Viands' feature inside AlohaCC dashboard.</sub></li>
+<li><b>index.php</b> — This is landing page whereas the user have to login or sign-up for AlohaCC website application.</li>
+<li><b>dash.php</b> — The dashboard after logging in from <i>index.php</i>. It compiles sort and search algorithms to yield specific feature.</li>
+<li><b>diary.php</b> — Validating user's food diary and food intake by date and id.</sub></li>
+<li><b>sort.php</b> — Merge sort algorithm implemented in PHP language and was utilized to sort food intake by date, ascending or descending.</li>
+<li><b>search.php</b> — Ruuning search algorithm for viands with suggested tag to show on 'Recommended Viands' feature inside AlohaCC dashboard.</li>
 </ol>
